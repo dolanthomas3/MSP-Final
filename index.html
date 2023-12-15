@@ -101,7 +101,7 @@
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-        <img src="firefox_logo-only_RGB 120w.png">
+        <img src="firefox_logo-only_RGB_120w.png" alt="Small fox around a blue world, small image">
     </header>
 
     <main>
@@ -122,24 +122,22 @@
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
           <img
-          srcset="firefox_logo-only_RGB 120w.png 120w, firefox_logo-only_RGB 400w.png 400w"
+          srcset="firefox_logo-only_RGB_120w.png 120w, firefox_logo-only_RGB_400w.png 400w"
           sizes="(max-width: 200px) 120px, 400px"
-          src="firefox_logo-only_RGB 400w.png"
-          alt="Firefox circling the globe"
-          
-          >
+          src="firefox_logo-only_RGB_400w.png"
+          alt="Firefox circling the globe" >
         </a>
         <a href="https://www.mozilla.org/">
           <img
-          srcset=""
-          src=""
-          alt=""
-          sizes=""
+          srcset="mozilla-dinosaur-head_120w.png 120w, mozilla-dinosaur-head_400w.png 400w"
+          src="mozilla-dinosaur-head_400w.png"
+          alt="A red dinosaur head of mozilla"
+          sizes="(max-width: 200px) 120px, 400px"
           >
         </a>
         <a href="https://addons.mozilla.org/">
           <img
-          srcset="firefox-addons 120w.jpg 120w, firefox-addons.jpg 400w"
+          srcset="firefox-addons_120w.jpg 120w, firefox-addons.jpg 400w"
           sizes="(max-width: 200px) 120px, 400px"
           src="firefox-addons.jpg"
           alt="A picture link to the firefox addon page."
@@ -147,10 +145,10 @@
         </a>
         <a href="https://developer.mozilla.org/en-US/">
           <img
-          srcset=""
-          src=""
-          alt=""
-          sizes=""
+          srcset="mdn.svg 120w, mdn.svg 400w"
+          src="mdn.svg"
+          alt="Mozilla fold out with white dino head profile in middle"
+          sizes="(max-width: 200px) 120px, 400px"
           >
         </a>
         <div class="clearfix"></div>
@@ -158,6 +156,11 @@
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <picture>
+          <source media="(max-width: 600px)" srcset="red-panda_portrait_200wx600w.jpg" >
+          <source media="(max-width: 601px)" srcset="red-panda_1200w_Landscape.jpg" >
+          <img src="red-panda_1200w_Landscape.jpg" alt="A cute red panda holdin onto a tree" >
+        </picture>
       </div>
 
     </main>
